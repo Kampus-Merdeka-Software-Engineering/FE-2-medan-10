@@ -66,7 +66,7 @@ function renderDataToContent(home) {
               </span>
             </div>
             <div class="d-flex justify-content-end mb-2">
-              <a href="#" class="btn btn-sm btn-outline-dark shadow-none btndetails">More details</a>
+              <a href="http://localhost/opulent/OpulentRoom-main/detailHotel.html?id=${id}" class="btn btn-sm btn-outline-dark shadow-none btndetails">More details</a>
             </div>
           </div>
         </div>
