@@ -169,6 +169,7 @@
                   <label class="form-check-label" for="flexCheck66">
                     Free Breakfast
                   </label>
+                  
                 </div>
               </div>
               
@@ -176,8 +177,13 @@
             <div class="sidefoot">
               <hr>
               <div class="d-flex justify-content-evenly mb-2">
-                <button class="btn btnsearch">Book Now</button>
+                <button class="btn btnsearch" id="bookNowBtn2">Book Now</button>
               </div>
+              <script>
+                document.getElementById('bookNowBtn2').addEventListener('click', function() {
+                  window.location.href = 'reservation.html';
+                });
+              </script>
             </div>
           </div> 
         </div>
