@@ -29,7 +29,7 @@ function postLogin (event){
         console.log(data);
         const message = data.message || 'Data saved successfully'
         form.reset();
-        window.location.href = "home.html";
+        window.location.href = "index.html";
         alert("Data Saved Successfully");
     });
 
