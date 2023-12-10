@@ -1,0 +1,232 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+/* navbar */
+.navbar{
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  background-color: #00985B;
+}
+
+/* Change navbar color when scrolling  */
+.navbar.scrolling-active{
+  background-color: #00985B;
+  padding: 15px 0 15px 0;
+}
+
+.navbar .btn-primary{
+  background-color: transparent;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.55);
+  border: none;
+}
+
+.navbar .btn-primary:hover{
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+}
+  
+/* Sidebar */
+.awal{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.sidebar{
+  border: apx solid #eee;
+  border-radius: 9px;
+  margin-right: 110px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.carousel-indicators{
+  color: white;
+}
+
+.carousel-inner .carousel-item{
+  height: 450px;
+}
+
+.carousel-item{
+  Position:relative;
+  background: no-repeat scroll center scroll;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.carousel-item img{
+  height:70vh;
+  object-fit: contain;
+  position: absolute;
+}
+
+.htl{
+  height: 400px;
+  padding: 40px;
+}
+
+.feature{ 
+  margin-left: 40px;
+}
+
+.btnsearch{
+  background-color: #ffffff;
+  border-color: rgba(0, 0, 0, 0.25);
+  border-radius: 9;
+  width: 100%;
+}
+
+.btnsearch:hover{
+  background-color: #00985B;
+  color: #ffffff;
+}
+
+/* footer */
+.footer{
+    min-height: 50vh;
+    background-color: #00985B;
+    margin-top: 150px;
+}
+  
+.footer .copyright{
+    padding-top: 50px;
+}
+
+.footer a{
+    color: rgba(255,255,255,0.5);
+}
+
+.footer a:hover{
+    color: #ffffff;
+}
+
+
+/*---------- MEDIA SCREEN RESPONSIVE ----------*/
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px){
+  
+  /* CSS */
+  .show-mobile{
+    display: none;
+  }
+    
+}
+  
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+  
+@media (min-width: 1025px) and (max-width: 1280px){
+    
+  /* CSS */
+  .show-mobile{
+    display: none;
+  }
+
+  .services img{
+    width: 220px;
+  }
+    
+}
+  
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+  
+@media (min-width: 768px) and (max-width: 1024px){
+    
+  /* CSS */
+  .navbar-toggler {
+    border: none;
+    outline: none;
+    &:focus,
+    &:active,
+    &-icon:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+  .navbar{
+    background-color: #00985B;
+    padding: 15px 0 15px 0;
+  }
+
+  .hero .row{
+    margin-top:100px;
+    display: none;
+  }
+    
+}
+  
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+  
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+    
+  /* CSS */
+  
+
+    
+}
+  
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+  
+@media (min-width: 481px) and (max-width: 767px){
+    
+  /* CSS */
+  .navbar-toggler {
+    border: none;
+    outline: none;
+  
+    &:focus,
+    &:active,
+    &-icon:focus{
+      outline: none;
+      box-shadow: none;
+    }
+  }
+  .navbar{
+    background-color: #00985B;
+    padding: 15px 0 15px 0;
+  }
+  
+  .hero .row{
+    margin-top:100px;
+    display: none;
+}
+}
+  
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+  
+@media (min-width: 320px) and (max-width: 480px){
+    
+  /* CSS */
+  .services h5{
+    font-size: 16px;
+  }
+}

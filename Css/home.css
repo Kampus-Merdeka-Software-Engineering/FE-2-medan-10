@@ -1,0 +1,265 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+/* navbar */
+.navbar{
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+/* Change navbar color when scrolling  */
+.navbar.scrolling-active{
+    background-color: #00985B;
+    padding: 15px 0 15px 0;
+}
+
+.navbar .btn-primary{
+  background-color: transparent;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.55);
+  border: none;
+}
+
+.navbar .btn-primary:hover{
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+}
+  
+/* Hero Section */
+.hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/labuan-bajo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+  
+.hero h1{
+    --animate-delay: 0.7s;
+}
+  
+.hero p{
+    --animate-delay: 1.2s;
+}
+  
+.hero button, input, select{
+    --animate-delay: 1.7s;
+}
+
+.hero .date button{
+    width: 120px;
+    height: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    vertical-align: middle;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px;
+    column-span: all;
+}
+
+input[type='date']:in-range::-webkit-datetime-edit-year-field, input[type='date']:in-range::-webkit-datetime-edit-month-field,input[type='date']:in-range::-webkit-datetime-edit-day-field,input[type='date']:in-range::-webkit-datetime-edit-text{  color: transparent;}
+
+.hero .submit{
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.55);
+    border-radius: 9px;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.hero .submit:hover{
+    background-color: #ffffff;
+    border-color: #000000;
+    border-radius: 9px;
+    color: #000000;
+}
+
+/* hotel */
+.hotel{
+  padding: 100px 0 100px 0;
+}
+
+#hotel .btndetails{
+  background-color: #ffffff;
+}
+
+#hotel .btndetails:hover{
+  background-color: #00985B;
+  color: #ffffff;
+}
+
+#hotel .morehtlbtn:hover{
+  background-color: #00985B;
+  color: #ffffff;
+}
+
+/* Destination Section   */
+.destination{
+    padding: 100px 0 100px 0;
+}
+  
+.destination img{
+    height: 250px;
+}
+
+/* Clien Says */ 
+.testimoni img{
+    width: 200px;
+    height: 300px;
+    background: #F00;
+    border-radius: 50%;
+    transform: scale(.76, .5);
+    align-self: center;
+}
+
+.card{
+    max-width: 350px; 
+    margin: auto;
+    height: 100%;
+}
+  
+/* footer */
+.footer{
+    min-height: 50vh;
+    background-color: #00985B;
+    margin-top: 150px;
+}
+  
+.footer .copyright{
+    padding-top: 50px;
+}
+
+.footer a{
+    color: rgba(255,255,255,0.5);
+}
+
+.footer a:hover{
+    color: #ffffff;
+}
+
+
+/*---------- MEDIA SCREEN RESPONSIVE ----------*/
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px){
+  
+  /* CSS */
+  .show-mobile{
+    display: none;
+  }
+    
+}
+  
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+  
+@media (min-width: 1025px) and (max-width: 1280px){
+    
+  /* CSS */
+  .show-mobile{
+    display: none;
+  }
+
+  .services img{
+    width: 220px;
+  }
+    
+}
+  
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+  
+@media (min-width: 768px) and (max-width: 1024px){
+    
+  /* CSS */
+  .navbar-toggler {
+    border: none;
+    outline: none;
+    &:focus,
+    &:active,
+    &-icon:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+  .navbar{
+    background-color: #00985B;
+    padding: 15px 0 15px 0;
+  }
+
+  .hero .row{
+    margin-top:100px;
+    display: none;
+  }
+    
+}
+  
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+  
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+    
+  /* CSS */
+  
+
+    
+}
+  
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+  
+@media (min-width: 481px) and (max-width: 767px){
+    
+  /* CSS */
+  .navbar-toggler {
+    border: none;
+    outline: none;
+  
+    &:focus,
+    &:active,
+    &-icon:focus{
+      outline: none;
+      box-shadow: none;
+    }
+  }
+  .navbar{
+    background-color: #00985B;
+    padding: 15px 0 15px 0;
+  }
+  
+  .hero .row{
+    margin-top:100px;
+    display: none;
+}
+}
+  
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+  
+@media (min-width: 320px) and (max-width: 480px){
+    
+  /* CSS */
+  .services h5{
+    font-size: 16px;
+  }
+}
