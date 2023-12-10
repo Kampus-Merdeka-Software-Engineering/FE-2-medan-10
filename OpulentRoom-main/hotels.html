@@ -81,10 +81,10 @@
     <!-- Search Start -->
     <div class="search-box" id="search-box">
       <div class="container">
-        <form id="search-form">
+        <form>
           <div class="row box">
             <div class="col-md-4">
-              <input id="hotel-name-input" class="form-control shadow-none" placeholder="Hotel">
+              <input class="form-control shadow-none" placeholder="Hotel">
             </div>
             <div class="col-md-4">
               <input type="text" name="daterange" class="form-control shadow-none" value="01/01/2018 - 31/12/3000" placeholder="Check-in/Check-out">
@@ -107,11 +107,315 @@
     </div>
     <!-- Search End -->
     
+    <!-- Sidebar Start -->
+    <div class="container awal">
+      <div class="sidebar shadow-lg">
+        <div class="sidehead">
+          <h5>Filter by</h5>
+          <hr>
+        </div>
+        <div class="sidebody">
+          <h6>Category</h6>
+          <div class="form-check category">
+            <div>
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+              <label class="form-check-label" for="flexCheckDefault1">
+                Adventure
+              </label>
+            </div>
+            <div>
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+              <label class="form-check-label" for="flexCheckDefault2">
+                Lifestyle
+              </label>
+            </div>
+            <div>
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+              <label class="form-check-label" for="flexCheckDefault3">
+                Honey Moon
+              </label>
+            </div>
+          </div>
+          <hr>
+          <h6>Price</h6>
+          <div class="searchbar">
+            <input placeholder="Search..." id="searchBar" name="searchBar" type="text">
+          </div>
+          <hr>
+          <h6>Star Rating</h6>
+          <div class="form-check category">
+            <div>
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+              <label class="form-check-label" for="flexCheckDefault1">
+                <span class="badge rounded-pill bg-light">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                </span>
+              </label>
+            </div>
+            <div>
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+              <label class="form-check-label" for="flexCheckDefault2">
+                <span class="badge rounded-pill bg-light">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                </span>
+              </label>
+            </div>
+            <div>
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+              <label class="form-check-label" for="flexCheckDefault3">
+                <span class="badge rounded-pill bg-light">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                </span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="sidefoot">
+          <hr>
+          <div class="d-flex justify-content-evenly mb-2">
+            <button class="btn btnsearch">Reset</button>
+            <button class="btn btnsearch">Search</button>
+          </div>
+        </div>
+      </div>
+      <div class="data">
+        <div class="body row">
           <!-- MP Hotels Start -->
-         
-         <div class="content" id="content" style= "display: flex;flex-wrap: wrap">
-         </div>
+            
+          <!-- 1 Start -->
+          <div class="col-lg-4 my-3 hotel align-items-stretch">
+            <div class="card border-0 shadow">
+              <img src="img/hotel/projects-1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title text-center">Crown Hotel</h4>
+                <h6 class=" text-center">Condet, Jakarta</h6>
+                <div class="features text-center">
+                  <span class="badge rounded-pill bg-light fs-5">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="d-flex">
+                <p class="harga text-center">From <br><span>Rp. 1.555.779</span><br> per night</p>
+                <a href="detailHotel.html" class="btn btnhtls">More Details</a>
+              </div>
+            </div>
+          </div>
+          <!-- 1 End -->
 
+          <!-- 2 Start -->
+          <div class="col-lg-4 my-3">
+            <div class="card border-0 shadow">
+              <img src="img/hotel/projects-1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title text-center">Crown Hotel</h4>
+                <h6 class=" text-center">Condet, Jakarta</h6>
+                <div class="features text-center">
+                  <span class="badge rounded-pill bg-light fs-5">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="d-flex">
+                <p class="harga text-center">From <br><span>Rp. 1.555.779</span><br> per night</p>
+                <a href="detailHotel.html" class="btn btnhtls">More Details</a>
+              </div>
+            </div>
+          </div>
+          <!-- 2 End-->
+
+          <!-- 3 Start -->
+          <div class="col-lg-4 my-3">
+            <div class="card border-0 shadow">
+              <img src="img/hotel/projects-1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title text-center">Crown Hotel</h4>
+                <h6 class=" text-center">Condet, Jakarta</h6>
+                <div class="features text-center">
+                  <span class="badge rounded-pill bg-light fs-5">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="d-flex">
+                <p class="harga text-center">From <br><span>Rp. 1.555.779</span><br> per night</p>
+                <a href="detailHotel.html" class="btn btnhtls">More Details</a>
+              </div>
+            </div>
+          </div>
+          <!-- 3 End -->
+
+          <!-- 4 Start -->
+          <div class="col-lg-4 my-3">
+            <div class="card border-0 shadow">
+              <img src="img/hotel/projects-1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title text-center">Crown Hotel</h4>
+                <h6 class=" text-center">Condet, Jakarta</h6>
+                <div class="features text-center">
+                  <span class="badge rounded-pill bg-light fs-5">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="d-flex">
+                <p class="harga text-center">From <br><span>Rp. 1.555.779</span><br> per night</p>
+                <a href="detailHotel.html" class="btn btnhtls">More Details</a>
+              </div>
+            </div>
+          </div>
+          <!-- 4 End -->
+              
+          <!-- 5 Start -->
+          <div class="col-lg-4 my-3">
+            <div class="card border-0 shadow">
+              <img src="img/hotel/projects-1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title text-center">Crown Hotel</h4>
+                <h6 class=" text-center">Condet, Jakarta</h6>
+                <div class="features text-center">
+                  <span class="badge rounded-pill bg-light fs-5">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="d-flex">
+                <p class="harga text-center">From <br><span>Rp. 1.555.779</span><br> per night</p>
+                <a href="detailHotel.html" class="btn btnhtls">More Details</a>
+              </div>
+            </div>
+          </div>
+          <!-- 5 End -->
+              
+          <!-- 6 Start -->
+          <div class="col-lg-4 my-3">
+            <div class="card border-0 shadow">
+              <img src="img/hotel/projects-1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title text-center">Crown Hotel</h4>
+                <h6 class=" text-center">Condet, Jakarta</h6>
+                <div class="features text-center">
+                  <span class="badge rounded-pill bg-light fs-5">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="d-flex">
+                <p class="harga text-center">From <br><span>Rp. 1.555.779</span><br> per night</p>
+                <a href="detailHotel.html" class="btn btnhtls">More Details</a>
+              </div>
+            </div>
+          </div>
+          <!-- 6 End -->
+        
+          <!-- 7 Start -->
+          <div class="col-lg-4 my-3">
+            <div class="card border-0 shadow">
+              <img src="img/hotel/projects-1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title text-center">Crown Hotel</h4>
+                <h6 class=" text-center">Condet, Jakarta</h6>
+                <div class="features text-center">
+                  <span class="badge rounded-pill bg-light fs-5">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="d-flex">
+                <p class="harga text-center">From <br><span>Rp. 1.555.779</span><br> per night</p>
+                <a href="detailHotel.html" class="btn btnhtls">More Details</a>
+              </div>
+            </div>
+          </div>
+          <!-- 7 End -->
+              
+          <!-- 8 Start -->
+          <div class="col-lg-4 my-3">
+            <div class="card border-0 shadow">
+              <img src="img/hotel/projects-1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title text-center">Crown Hotel</h4>
+                <h6 class=" text-center">Condet, Jakarta</h6>
+                <div class="features text-center">
+                  <span class="badge rounded-pill bg-light fs-5">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="d-flex">
+                <p class="harga text-center">From <br><span>Rp. 1.555.779</span><br> per night</p>
+                <a href="detailHotel.html" class="btn btnhtls">More Details</a>
+              </div>
+            </div>
+          </div>
+          <!-- 8 End -->
+              
+          <!-- 9 Start -->
+          <div class="col-lg-4 my-3">
+            <div class="card border-0 shadow">
+              <img src="img/hotel/projects-1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title text-center">Crown Hotel</h4>
+                <h6 class=" text-center">Condet, Jakarta</h6>
+                <div class="features text-center">
+                  <span class="badge rounded-pill bg-light fs-5">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="d-flex">
+                <p class="harga text-center">From <br><span>Rp. 1.555.779</span><br> per night</p>
+                <a href="detailHotel.html" class="btn btnhtls">More Details</a>
+              </div>
+            </div>
+          </div>
+          <!-- 9 End -->
+          
           <div class="d-flex justify-content-end mb-2 ">
             <a href="#" class="btn btn-sm mt-5 me-1 btnpage"> 
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g transform="rotate(-90 12 12)"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m17 14l-5-5m0 0l-5 5"/></g></svg>
@@ -120,7 +424,6 @@
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g transform="rotate(90 12 12)"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m17 14l-5-5m0 0l-5 5"/></g></svg>
             </a>
           </div>
-         </div> 
         </div>
       </div>
       <!-- MP Hotels End -->
@@ -172,6 +475,5 @@
     <script>
       AOS.init();
     </script>
-    <script src="hotels.js"></script>
   </body>
 </html>
