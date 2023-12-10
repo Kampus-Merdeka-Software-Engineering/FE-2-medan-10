@@ -1,5 +1,5 @@
-document.querySelector("userForm")
-.addEventListener("submit", postLogin);
+document.getElementById("userForm").addEventListener("submit", postLogin);
+
 
 function postLogin (event){
     event.preventDefault();
@@ -8,14 +8,13 @@ function postLogin (event){
     const email = form.querySelector('input[name="email"]').value;
     const password = form.querySelector('input[name="password"]').value;
 
-
-
     //simpan ke dalam object js
     const data = {
         name:name,
         email:email,
         password:password
     };
+    console.log(data);
 
     //post ke BE
     fetch('http://localhost:3001/users',{
@@ -28,14 +27,10 @@ function postLogin (event){
     .then(res=>res.json())
     .then(data => {
         console.log(data);
+        const message = data.message || 'Data saved successfully'
         form.reset();
-        alert(data.message);
+        window.location.href = "index.html";
+        alert("Data Saved Successfully");
     });
+
 }
-
-
-
-
-
-
-
